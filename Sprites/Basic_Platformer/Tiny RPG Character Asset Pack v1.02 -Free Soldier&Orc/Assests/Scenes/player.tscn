@@ -1,0 +1,159 @@
+[gd_scene load_steps=12 format=3 uid="uid://dqtrc4euc51uc"]
+
+[ext_resource type="Script" uid="uid://dc1iu2viyg07j" path="res://player_controller.gd" id="1_3sr3p"]
+[ext_resource type="Script" uid="uid://5chjn0xop7q5" path="res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scripts/player_animator.gd" id="2_0g0s7"]
+[ext_resource type="Texture2D" uid="uid://j8w6k8acgm51" path="res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Soldier/Soldier/Soldier.png" id="2_3sr3p"]
+
+[sub_resource type="Animation" id="Animation_oqkfw"]
+resource_name = "Attack"
+length = 2.0
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.25, 0.5, 0.75, 1, 1.25, 1.3688544, 1.5, 1.75, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(41, 138.5, 15, 21.5), Rect2(141, 329.5, 19, 23), Rect2(241, 331.5, 20, 21.5), Rect2(341, 337.5, 29.5, 21.5), Rect2(441, 337.5, 29.5, 21.5), Rect2(141, 329.5, 19, 23), Rect2(141, 329.5, 19, 23), Rect2(41, 38.5, 15, 21.5), Rect2(41, 38.5, 15, 21.5)]
+}
+
+[sub_resource type="Animation" id="Animation_8splq"]
+resource_name = "Hurt"
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1768629, 0.25, 0.5, 0.75, 0.8604673, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(341, 538.5, 15, 21.5), Rect2(341, 538.5, 15, 21.5), Rect2(41, 538.5, 15, 21.5), Rect2(141, 538.5, 15, 21.5), Rect2(241, 38.5, 15, 21.5), Rect2(241, 38.5, 15, 21.5), Rect2(341, 38.5, 15, 21.5)]
+}
+
+[sub_resource type="Animation" id="Animation_0g0s7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(41, 38.5, 15, 21.5)]
+}
+
+[sub_resource type="Animation" id="Animation_xrk5y"]
+resource_name = "death"
+length = 1.25
+loop_mode = 2
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.25, 0.5, 0.75, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(41, 638.5, 15, 21.5), Rect2(141, 638.5, 15, 21.5), Rect2(241, 638.5, 21, 23.5), Rect2(341, 638.5, 27, 23.5)]
+}
+
+[sub_resource type="Animation" id="Animation_7gi2c"]
+resource_name = "idle"
+length = 2.0
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(41, 38.5, 15, 21.5), Rect2(141, 38.5, 15, 21.5), Rect2(241, 38.5, 15, 21.5), Rect2(341, 38.5, 15, 21.5), Rect2(441, 38.5, 15, 21.5), Rect2(541, 38.5, 15, 21.5), Rect2(41, 38.5, 15, 21.5), Rect2(141, 38.5, 15, 21.5)]
+}
+
+[sub_resource type="Animation" id="Animation_3sr3p"]
+resource_name = "walking"
+length = 2.0
+loop_mode = 1
+step = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.25, 0.5, 0.75, 1, 1.25, 1.5, 1.75, 2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(41, 138.5, 15, 21.5), Rect2(141, 138.5, 15, 21.5), Rect2(241, 138.5, 15, 21.5), Rect2(341, 138.5, 15, 21.5), Rect2(441, 138.5, 15, 21.5), Rect2(541, 138.5, 15, 21.5), Rect2(641, 138.5, 15, 21.5), Rect2(141, 138.5, 15, 21.5)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_8splq"]
+_data = {
+&"Attack": SubResource("Animation_oqkfw"),
+&"Hurt": SubResource("Animation_8splq"),
+&"RESET": SubResource("Animation_0g0s7"),
+&"death": SubResource("Animation_xrk5y"),
+&"idle": SubResource("Animation_7gi2c"),
+&"walking": SubResource("Animation_3sr3p")
+}
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3sr3p"]
+radius = 5.0
+height = 18.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 768
+platform_on_leave = 2
+script = ExtResource("1_3sr3p")
+speed = 7.0
+jump_power = 18.0
+
+[node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(31, -35)
+zoom = Vector2(3.7, 3.7)
+limit_enabled = false
+position_smoothing_speed = 8.0
+
+[node name="PlayerAnimator" type="Node2D" parent="." node_paths=PackedStringArray("player_controller", "animation_player", "sprite")]
+script = ExtResource("2_0g0s7")
+player_controller = NodePath("..")
+animation_player = NodePath("AnimationPlayer")
+sprite = NodePath("Sprite2D")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="PlayerAnimator"]
+libraries = {
+&"": SubResource("AnimationLibrary_8splq")
+}
+autoplay = "idle"
+
+[node name="Sprite2D" type="Sprite2D" parent="PlayerAnimator"]
+position = Vector2(-1, -7.999999)
+scale = Vector2(1, 1.0714285)
+texture = ExtResource("2_3sr3p")
+region_enabled = true
+region_rect = Rect2(41, 38.5, 15, 21.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1, -9)
+shape = SubResource("CapsuleShape2D_3sr3p")
