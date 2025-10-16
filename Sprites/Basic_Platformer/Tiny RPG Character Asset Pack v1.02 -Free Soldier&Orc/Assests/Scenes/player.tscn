@@ -123,14 +123,15 @@ radius = 5.0
 height = 18.0
 
 [node name="Player" type="CharacterBody2D"]
+collision_layer = 3
 collision_mask = 768
 platform_on_leave = 2
 script = ExtResource("1_3sr3p")
 speed = 7.0
-jump_power = 18.0
+jump_power = 14.0
 
 [node name="Camera2D" type="Camera2D" parent="."]
-offset = Vector2(31, -35)
+offset = Vector2(59, -46)
 zoom = Vector2(3.7, 3.7)
 limit_enabled = false
 position_smoothing_speed = 8.0
