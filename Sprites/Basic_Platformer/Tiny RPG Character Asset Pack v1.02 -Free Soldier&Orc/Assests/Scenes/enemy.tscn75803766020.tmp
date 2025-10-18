@@ -101,7 +101,7 @@ script = ExtResource("1_uro7v")
 sprite_frames = SubResource("SpriteFrames_bgjvo")
 animation = &"flying"
 autoplay = "flying"
-frame_progress = 0.81065416
+frame_progress = 0.817279
 
 [node name="Vision" type="Area2D" parent="."]
 

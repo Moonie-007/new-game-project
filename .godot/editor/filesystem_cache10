@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1760558046
+::res://::1760714637
 icon.svg::CompressedTexture2D::987775935465999014::1760168538::1760168539::1::::<><><>0<>0<>4931c19ece584a3afc8ec74abe740279<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 player_controller.gd::GDScript::7353836462748319645::1760365346::0::1::::PlayerController<>CharacterBody2D<><>0<>0<><>::
 README.md::TextFile::-1::1760168538::0::1::::<><><>0<>0<><>::
@@ -207,12 +207,13 @@ tile_0159.png::CompressedTexture2D::2853333127726768932::1760208082::1760249039:
 ::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/::1760207979
 ::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/::1760370407
 moving_platformer.gd::GDScript::1279292705356495155::1760370407::0::1::::MovingPlatformer<>Path2D<><>0<>0<><>::
-::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/::1760554463
+::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/::1760563043
+enemy.tscn::PackedScene::6088960702619986649::1760563043::0::1::::<><><>0<>0<><>::uid://b4w133kw5k8gf::::res://Enemy/EnemyAssest/ghost1_fly.png
 moving_platformer.tscn::PackedScene::6412396552258427543::1760553491::0::1::::<><><>0<>0<><>::uid://shx08ekgcq3l::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/moving_platformer.gd<>uid://05jogf8dq8ga::::res://Sprites/Basic_Platformer/Tiles/tile_0064.png
-player.tscn::PackedScene::8322544017348759586::1760554463::0::1::::<><><>0<>0<><>::uid://dc1iu2viyg07j::::res://player_controller.gd<>uid://5chjn0xop7q5::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scripts/player_animator.gd<>uid://j8w6k8acgm51::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Soldier/Soldier/Soldier.png
+player.tscn::PackedScene::8322544017348759586::1760562394::0::1::::<><><>0<>0<><>::uid://dc1iu2viyg07j::::res://player_controller.gd<>uid://5chjn0xop7q5::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scripts/player_animator.gd<>uid://j8w6k8acgm51::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Soldier/Soldier/Soldier.png
 player_controller.gd::GDScript::4454188883409691382::1760175397::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/Area/::1760555670
-area_1.tscn::PackedScene::84373796530342082::1760555670::0::1::::<><><>0<>0<><>::uid://ccs3pdynkwj4t::::res://Sprites/Basic_Platformer/Tilemap/tilemap.png<>uid://dqtrc4euc51uc::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/player.tscn<>uid://cxmhh76aeoxch::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/moving_platformer.tscn
+::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/Area/::1760639974
+area_1.tscn::PackedScene::84373796530342082::1760639974::0::1::::<><><>0<>0<><>::uid://ccs3pdynkwj4t::::res://Sprites/Basic_Platformer/Tilemap/tilemap.png<>uid://dqtrc4euc51uc::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/player.tscn<>uid://cxmhh76aeoxch::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/moving_platformer.tscn<>uid://cs0sj75roid10::::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scenes/enemy.tscn
 ::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Assests/Scripts/::1760207420
 player_animator.gd::GDScript::2110235878231613238::1760207420::0::1::::<>Node2D<><>0<>0<><>::
 ::res://Sprites/Basic_Platformer/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/Tiny RPG Character Asset Pack v1.02 -Free Soldier&Orc/::1760172581

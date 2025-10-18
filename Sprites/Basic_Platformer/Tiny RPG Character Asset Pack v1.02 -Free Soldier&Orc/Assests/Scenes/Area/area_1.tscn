@@ -753,30 +753,5 @@ position = Vector2(667, -28)
 curve = SubResource("Curve2D_n1a2v")
 path_time = 1.5
 
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="Enemies" type="Node2D" parent="Node2D"]
-
-[node name="Enemy" parent="Node2D/Enemies" instance=ExtResource("4_80n3j")]
-position = Vector2(356, -14)
-
-[node name="Enemy2" parent="Node2D/Enemies" instance=ExtResource("4_80n3j")]
-position = Vector2(556, -9)
-
-[node name="Enemy3" parent="Node2D/Enemies" instance=ExtResource("4_80n3j")]
-position = Vector2(749, -11)
-
-[node name="Enemy4" parent="Node2D/Enemies" instance=ExtResource("4_80n3j")]
-position = Vector2(976, -9)
-
-[node name="Enemy5" parent="Node2D/Enemies" instance=ExtResource("4_80n3j")]
-position = Vector2(1366, -93)
-
-[node name="Enemy6" parent="Node2D/Enemies" instance=ExtResource("4_80n3j")]
-position = Vector2(1715, -16)
-
-[node name="Enemy7" parent="Node2D/Enemies" instance=ExtResource("4_80n3j")]
-position = Vector2(1925, -17)
-
-[node name="Enemy8" parent="Node2D/Enemies" instance=ExtResource("4_80n3j")]
-position = Vector2(2243, -13)
+[node name="Enemy" parent="." instance=ExtResource("4_80n3j")]
+position = Vector2(447, -11)
